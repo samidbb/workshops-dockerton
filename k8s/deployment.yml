@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ##application-name##
+  namespace: ##namespace##
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ##application-name##
+  template:
+    metadata:
+      labels:
+        app: ##application-name##
+    spec:
+      containers:
+      - image: ##image##
+        name: containername
+        ports:
+        - name: web
+          containerPort: 80
+          protocol: TCP
