@@ -1,1 +1,0 @@
-# manuscript by JANDR
