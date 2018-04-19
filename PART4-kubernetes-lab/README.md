@@ -22,6 +22,7 @@ Download the Kubernetes `config` from `#dockerton` (Slack) and move the file to 
 
 View nodes:
 ```bash
+kubectl.exe version
 kubectl.exe get nodes
 ```
 
